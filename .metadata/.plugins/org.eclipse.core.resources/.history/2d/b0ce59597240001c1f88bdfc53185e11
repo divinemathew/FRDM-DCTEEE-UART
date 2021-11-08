@@ -21,7 +21,6 @@ int main(void) {
 
 
     while(1){
-    	/*LED TURN ON*/
     	LED_BLUE_ON();
     	SDK_DelayAtLeastUs(100000, 120000000);
     	LED_BLUE_OFF();
