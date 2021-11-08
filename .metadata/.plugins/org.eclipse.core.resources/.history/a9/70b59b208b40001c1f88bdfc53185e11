@@ -18,10 +18,6 @@
    </preferences>
    <tools>
       <pins name="Pins" version="10.0" enabled="true" update_project_code="true">
-         <generated_project_files>
-            <file path="pin_mux.c" update_enabled="true"/>
-            <file path="pin_mux.h" update_enabled="true"/>
-         </generated_project_files>
          <pins_profile>
             <processor_version>10.0.0</processor_version>
             <pin_labels>
@@ -715,10 +711,6 @@
          </functions_list>
       </pins>
       <clocks name="Clocks" version="8.0" enabled="true" update_project_code="true">
-         <generated_project_files>
-            <file path="clock_config.c" update_enabled="true"/>
-            <file path="clock_config.h" update_enabled="true"/>
-         </generated_project_files>
          <clocks_profile>
             <processor_version>10.0.0</processor_version>
          </clocks_profile>
@@ -737,17 +729,35 @@
                         <data>INPUT</data>
                      </feature>
                   </dependency>
+                  <dependency resourceType="SWComponent" resourceId="platform.drivers.common" description="Clocks initialization requires the COMMON Driver in the project." problem_level="2" source="Clocks:BOARD_BootClockRUN">
+                     <feature name="enabled" evaluation="equal" configuration="core0">
+                        <data>true</data>
+                     </feature>
+                  </dependency>
                </dependencies>
                <clock_sources>
                   <clock_source id="OSC.OSC.outFreq" value="50 MHz" locked="false" enabled="true"/>
                </clock_sources>
                <clock_outputs>
+                  <clock_output id="Bus_clock.outFreq" value="60 MHz" locked="false" accuracy=""/>
+                  <clock_output id="CLKOUT.outFreq" value="40 MHz" locked="false" accuracy=""/>
+                  <clock_output id="Core_clock.outFreq" value="120 MHz" locked="true" accuracy="0.001"/>
+                  <clock_output id="ENET1588TSCLK.outFreq" value="50 MHz" locked="false" accuracy=""/>
+                  <clock_output id="Flash_clock.outFreq" value="24 MHz" locked="false" accuracy=""/>
+                  <clock_output id="FlexBus_clock.outFreq" value="40 MHz" locked="false" accuracy=""/>
                   <clock_output id="LPO_clock.outFreq" value="1 kHz" locked="false" accuracy=""/>
+                  <clock_output id="MCGFFCLK.outFreq" value="1.5625 MHz" locked="false" accuracy=""/>
                   <clock_output id="MCGIRCLK.outFreq" value="2 MHz" locked="false" accuracy=""/>
+                  <clock_output id="OSCERCLK.outFreq" value="50 MHz" locked="false" accuracy=""/>
+                  <clock_output id="PLLFLLCLK.outFreq" value="120 MHz" locked="false" accuracy=""/>
+                  <clock_output id="RMIICLK.outFreq" value="50 MHz" locked="false" accuracy=""/>
+                  <clock_output id="SDHCCLK.outFreq" value="50 MHz" locked="false" accuracy=""/>
+                  <clock_output id="System_clock.outFreq" value="120 MHz" locked="false" accuracy=""/>
+                  <clock_output id="TRACECLKIN.outFreq" value="120 MHz" locked="false" accuracy=""/>
+                  <clock_output id="USB48MCLK.outFreq" value="48 MHz" locked="false" accuracy=""/>
                </clock_outputs>
                <clock_settings>
                   <setting id="MCGMode" value="PEE" locked="false"/>
-                  <setting id="powerMode" value="VLPR" locked="false"/>
                   <setting id="CLKOUTConfig" value="yes" locked="false"/>
                   <setting id="ENETTimeSrcConfig" value="yes" locked="false"/>
                   <setting id="MCG.FRDIV.scale" value="32" locked="false"/>
@@ -835,10 +845,6 @@
          <dcdx_configurations/>
       </dcdx>
       <periphs name="Peripherals" version="10.0" enabled="true" update_project_code="true">
-         <generated_project_files>
-            <file path="peripherals.c" update_enabled="true"/>
-            <file path="peripherals.h" update_enabled="true"/>
-         </generated_project_files>
          <peripherals_profile>
             <processor_version>10.0.0</processor_version>
          </peripherals_profile>
