@@ -93,3 +93,9 @@ void Init_UART0()
 	UART_EnableInterrupts(UART0, kUART_RxDataRegFullInterruptEnable | kUART_RxOverrunInterruptEnable);
 }
 
+/*
+void UART_PinInit()
+{
+	CLOCK_EnableClock(kCLOCK_PortB);
+
+}*/

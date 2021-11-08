@@ -3720,3 +3720,443 @@ java.lang.InterruptedException
 
 !ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-11-08 14:21:25.056
 !MESSAGE RedlinkServer telnet session connected on port 3025->43088 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-11-08 15:18:47.904
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-11-08 15:18:47.904
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-11-08 15:18:47.904
+!MESSAGE Hardware Transfer Error
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-11-08 15:18:47.904
+!MESSAGE Debugging context: UART_Interrupt LinkServer Debug
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-11-08 16:41:35.449
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.cdt.debug.ui.editors.AbstractDebugTextHover.getSelectionAdaptable(AbstractDebugTextHover.java:508)
+	at com.nxp.mcuxpresso.core.debug.ui.NXPGdbDebugTextHover.getLaunch(NXPGdbDebugTextHover.java:162)
+	at com.nxp.mcuxpresso.core.debug.ui.NXPGdbDebugTextHover.evaluateExpression(NXPGdbDebugTextHover.java:262)
+	at org.eclipse.cdt.debug.ui.editors.AbstractDebugTextHover.getHoverInfo(AbstractDebugTextHover.java:166)
+	at com.nxp.mcuxpresso.core.debug.ui.NXPGdbDebugTextHover.getHoverInfo2(NXPGdbDebugTextHover.java:303)
+	at org.eclipse.cdt.debug.internal.ui.editors.DelegatingDebugTextHover.getHoverInfo2(DelegatingDebugTextHover.java:70)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface.text 4 0 2021-11-08 16:41:35.450
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException
+	at com.nxp.mcuxpresso.core.debug.ui.NXPGdbDebugTextHover.clearCache(NXPGdbDebugTextHover.java:400)
+	at com.nxp.mcuxpresso.core.debug.ui.NXPGdbDebugTextHover.evaluateExpression(NXPGdbDebugTextHover.java:262)
+	at org.eclipse.cdt.debug.ui.editors.AbstractDebugTextHover.getHoverInfo(AbstractDebugTextHover.java:166)
+	at com.nxp.mcuxpresso.core.debug.ui.NXPGdbDebugTextHover.getHoverInfo2(NXPGdbDebugTextHover.java:303)
+	at org.eclipse.cdt.debug.internal.ui.editors.DelegatingDebugTextHover.getHoverInfo2(DelegatingDebugTextHover.java:70)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-11-08 16:51:38.512
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@70898fa1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Invalid context type. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2021-11-08 16:51:38.512
+!MESSAGE Invalid context type.
+
+!ENTRY org.eclipse.debug.ui 4 120 2021-11-08 17:16:15.896
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.FutureTask.awaitDone(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.runInUIThreadWithTimeout(SelectedResourceManager.java:262)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getFromUI(SelectedResourceManager.java:240)
+	at org.eclipse.debug.internal.ui.stringsubstitution.SelectedResourceManager.getActiveWindow(SelectedResourceManager.java:231)
+	at org.eclipse.debug.ui.DebugUITools.getDebugContext(DebugUITools.java:247)
+	at org.eclipse.cdt.debug.internal.ui.editors.DelegatingDebugTextHover.getDelegate(DelegatingDebugTextHover.java:99)
+	at org.eclipse.cdt.debug.internal.ui.editors.DelegatingDebugTextHover.getHoverInfo2(DelegatingDebugTextHover.java:68)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:16:19.112
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-11-08 17:16:19.115
+!MESSAGE RedlinkServer telnet session connected on port 3025->43522 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2021-11-08 17:16:25.883
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 25
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1014)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:843)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2021-11-08 17:16:25.883
+!MESSAGE Failed to execute MI command:
+-data-list-register-values x 25
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1014)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:843)
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:16:30.469
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-11-08 17:16:30.470
+!MESSAGE RedlinkServer telnet session connected on port 3025->43526 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:18:58.019
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-11-08 17:18:58.020
+!MESSAGE RedlinkServer telnet session connected on port 3025->43528 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:13.792
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-11-08 17:19:13.794
+!MESSAGE RedlinkServer telnet session connected on port 3025->43530 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-11-08 17:19:21.160
+!MESSAGE Telnet session connected on port 3331->43496 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.059
+!MESSAGE Genric ROM base address found in xml file: e00ff000
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.232
+!MESSAGE Successfully identified 0x9 class component  Address e000e000 CID1 = 224 PID0 = 12 PID1 = 176 PID2 = 11 PID3 = 0 Revision = 0
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.255
+!MESSAGE Successfully identified 0x9 class component  Address e0001000 CID1 = 224 PID0 = 2 PID1 = 176 PID2 = 59 PID3 = 0 Revision = 3
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.276
+!MESSAGE Successfully identified 0x9 class component  Address e0002000 CID1 = 224 PID0 = 3 PID1 = 176 PID2 = 43 PID3 = 0 Revision = 2
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.299
+!MESSAGE Successfully identified 0x9 class component  Address e0000000 CID1 = 224 PID0 = 1 PID1 = 176 PID2 = 59 PID3 = 0 Revision = 3
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.327
+!MESSAGE Successfully identified 0x9 class component  Address e0040000 CID1 = 144 PID0 = 161 PID1 = 185 PID2 = 11 PID3 = 0 DEVARCH = 0 Revision = 0
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.355
+!MESSAGE Successfully identified 0x9 class component  Address e0041000 CID1 = 144 PID0 = 37 PID1 = 185 PID2 = 11 PID3 = 0 DEVARCH = 0 Revision = 0
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.387
+!MESSAGE Successfully identified 0x9 class component  Address e0042000 CID1 = 144 PID0 = 7 PID1 = 185 PID2 = 59 PID3 = 0 DEVARCH = 0 Revision = 3
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:19:22.420
+!MESSAGE Successfully identified 0x9 class component  Address e0043000 CID1 = 144 PID0 = 8 PID1 = 185 PID2 = 27 PID3 = 0 DEVARCH = 0 Revision = 1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-11-08 17:20:45.102
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@6b18c99f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Invalid context type. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2021-11-08 17:20:45.102
+!MESSAGE Invalid context type.
+
+!ENTRY org.eclipse.ui.console 4 0 2021-11-08 17:20:47.441
+!MESSAGE Streams are already closed.
+!STACK 0
+java.lang.IllegalStateException: Streams are already closed.
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamsClosed(IOConsolePartitioner.java:271)
+	at org.eclipse.ui.console.IOConsole.checkFinished(IOConsole.java:262)
+	at org.eclipse.ui.console.IOConsole.streamClosed(IOConsole.java:274)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:181)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:290)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:179)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:290)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:276)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:201)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:211)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.lf(MCXTelnetService.java:390)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:137)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:228)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1040)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:481)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1162)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1149)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:463)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.crt.log 4 -1 2021-11-08 17:20:47.441
+!MESSAGE Document is closed
+!STACK 0
+java.lang.Exception: java.io.IOException: Document is closed
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.lf(MCXTelnetService.java:399)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:137)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:228)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1040)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:481)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1162)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1149)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:463)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Document is closed
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamAppended(IOConsolePartitioner.java:690)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:281)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:179)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:290)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:276)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:201)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:211)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.lf(MCXTelnetService.java:390)
+	... 14 more
+
+!ENTRY org.eclipse.ui.console 4 0 2021-11-08 17:20:47.549
+!MESSAGE Streams are already closed.
+!STACK 0
+java.lang.IllegalStateException: Streams are already closed.
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamsClosed(IOConsolePartitioner.java:271)
+	at org.eclipse.ui.console.IOConsole.checkFinished(IOConsole.java:262)
+	at org.eclipse.ui.console.IOConsole.streamClosed(IOConsole.java:274)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:181)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:290)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:276)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:260)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.log(MCXTelnetService.java:360)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:138)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:228)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1040)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:481)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1162)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1149)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:463)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.crt.log 4 -1 2021-11-08 17:20:47.549
+!MESSAGE Document is closed
+!STACK 0
+java.lang.Exception: java.io.IOException: Document is closed
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.log(MCXTelnetService.java:366)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:138)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:228)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1040)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:481)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1162)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1149)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:463)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Document is closed
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamAppended(IOConsolePartitioner.java:690)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:281)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:276)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:260)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.log(MCXTelnetService.java:360)
+	... 14 more
+
+!ENTRY org.eclipse.ui.console 4 0 2021-11-08 17:20:47.549
+!MESSAGE Streams are already closed.
+!STACK 0
+java.lang.IllegalStateException: Streams are already closed.
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamsClosed(IOConsolePartitioner.java:271)
+	at org.eclipse.ui.console.IOConsole.checkFinished(IOConsole.java:262)
+	at org.eclipse.ui.console.IOConsole.streamClosed(IOConsole.java:274)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:181)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:290)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:179)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:290)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:276)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:201)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:211)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.lf(MCXTelnetService.java:390)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:137)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:228)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesRemoved(MCXTelnetService.java:156)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:276)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1040)
+	at org.eclipse.debug.internal.core.LaunchManager.removeLaunch(LaunchManager.java:2205)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.removeTerminatedLaunches(LaunchConfigurationManager.java:327)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.launchAdded(LaunchConfigurationManager.java:315)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:417)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1029)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:680)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:764)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.crt.log 4 -1 2021-11-08 17:20:47.550
+!MESSAGE Document is closed
+!STACK 0
+java.lang.Exception: java.io.IOException: Document is closed
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.lf(MCXTelnetService.java:399)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:137)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:228)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesRemoved(MCXTelnetService.java:156)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:276)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1040)
+	at org.eclipse.debug.internal.core.LaunchManager.removeLaunch(LaunchManager.java:2205)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.removeTerminatedLaunches(LaunchConfigurationManager.java:327)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.launchAdded(LaunchConfigurationManager.java:315)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:417)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1029)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:680)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:764)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Document is closed
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamAppended(IOConsolePartitioner.java:690)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:281)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:179)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:290)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:276)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:201)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:211)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.lf(MCXTelnetService.java:390)
+	... 20 more
+
+!ENTRY org.eclipse.ui.console 4 0 2021-11-08 17:20:47.755
+!MESSAGE Streams are already closed.
+!STACK 0
+java.lang.IllegalStateException: Streams are already closed.
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamsClosed(IOConsolePartitioner.java:271)
+	at org.eclipse.ui.console.IOConsole.checkFinished(IOConsole.java:262)
+	at org.eclipse.ui.console.IOConsole.streamClosed(IOConsole.java:274)
+	at org.eclipse.ui.console.IOConsoleOutputStream.close(IOConsoleOutputStream.java:181)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:290)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:276)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:260)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.log(MCXTelnetService.java:360)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:138)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:228)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesRemoved(MCXTelnetService.java:156)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:276)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1040)
+	at org.eclipse.debug.internal.core.LaunchManager.removeLaunch(LaunchManager.java:2205)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.removeTerminatedLaunches(LaunchConfigurationManager.java:327)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.launchAdded(LaunchConfigurationManager.java:315)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:417)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1029)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:680)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:764)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.crt.log 4 -1 2021-11-08 17:20:47.756
+!MESSAGE Document is closed
+!STACK 0
+java.lang.Exception: java.io.IOException: Document is closed
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.log(MCXTelnetService.java:366)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:138)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:228)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesRemoved(MCXTelnetService.java:156)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:276)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1040)
+	at org.eclipse.debug.internal.core.LaunchManager.removeLaunch(LaunchManager.java:2205)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.removeTerminatedLaunches(LaunchConfigurationManager.java:327)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.launchAdded(LaunchConfigurationManager.java:315)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:417)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1029)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:680)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:764)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Document is closed
+	at org.eclipse.ui.internal.console.IOConsolePartitioner.streamAppended(IOConsolePartitioner.java:690)
+	at org.eclipse.ui.console.IOConsoleOutputStream.notifyParitioner(IOConsoleOutputStream.java:281)
+	at org.eclipse.ui.console.IOConsoleOutputStream.encodedWrite(IOConsoleOutputStream.java:276)
+	at org.eclipse.ui.console.IOConsoleOutputStream.write(IOConsoleOutputStream.java:260)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.log(MCXTelnetService.java:360)
+	... 20 more
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:20:53.680
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-11-08 17:20:53.681
+!MESSAGE RedlinkServer telnet session connected on port 3025->43540 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:03.361
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-11-08 17:21:03.361
+!MESSAGE RedlinkServer telnet session connected on port 3025->43544 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-11-08 17:21:10.344
+!MESSAGE Telnet session connected on port 3331->43510 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:11.817
+!MESSAGE Genric ROM base address found in xml file: e00ff000
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:11.963
+!MESSAGE Successfully identified 0x9 class component  Address e000e000 CID1 = 224 PID0 = 12 PID1 = 176 PID2 = 11 PID3 = 0 Revision = 0
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:11.986
+!MESSAGE Successfully identified 0x9 class component  Address e0001000 CID1 = 224 PID0 = 2 PID1 = 176 PID2 = 59 PID3 = 0 Revision = 3
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:12.006
+!MESSAGE Successfully identified 0x9 class component  Address e0002000 CID1 = 224 PID0 = 3 PID1 = 176 PID2 = 43 PID3 = 0 Revision = 2
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:12.026
+!MESSAGE Successfully identified 0x9 class component  Address e0000000 CID1 = 224 PID0 = 1 PID1 = 176 PID2 = 59 PID3 = 0 Revision = 3
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:12.058
+!MESSAGE Successfully identified 0x9 class component  Address e0040000 CID1 = 144 PID0 = 161 PID1 = 185 PID2 = 11 PID3 = 0 DEVARCH = 0 Revision = 0
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:12.093
+!MESSAGE Successfully identified 0x9 class component  Address e0041000 CID1 = 144 PID0 = 37 PID1 = 185 PID2 = 11 PID3 = 0 DEVARCH = 0 Revision = 0
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:12.124
+!MESSAGE Successfully identified 0x9 class component  Address e0042000 CID1 = 144 PID0 = 7 PID1 = 185 PID2 = 59 PID3 = 0 DEVARCH = 0 Revision = 3
+
+!ENTRY com.crt.log 1 0 2021-11-08 17:21:12.155
+!MESSAGE Successfully identified 0x9 class component  Address e0043000 CID1 = 144 PID0 = 8 PID1 = 185 PID2 = 27 PID3 = 0 DEVARCH = 0 Revision = 1

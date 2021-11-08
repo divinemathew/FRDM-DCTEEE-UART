@@ -19,6 +19,6 @@ void UART0_RX_TX_IRQHandler(){
 	uint8_t readch;
 	readch = read();
 	print(readch);
-	//PORT_ClearPinsInterruptFlags(GPIOB, (1<<16));
-	//PORT_ClearPinsInterruptFlags(GPIOB, (1<<17));
+	PORT_ClearPinsInterruptFlags(GPIOB, (1<<16));
+	PORT_ClearPinsInterruptFlags(GPIOB, (1<<17));
 }

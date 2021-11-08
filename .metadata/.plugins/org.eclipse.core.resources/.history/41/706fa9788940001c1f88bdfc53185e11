@@ -404,7 +404,7 @@ void BOARD_InitDEBUG_UARTPins(void)
                                              kPORT_UnlockRegister};
     /* PORTB16 (pin 62) is configured as UART0_RX */
     PORT_SetPinConfig(BOARD_DEBUG_UART_RX_PORT, BOARD_DEBUG_UART_RX_PIN, &DEBUG_UART_RX);
-    //PORT_SetPinInterruptConfig(BOARD_DEBUG_UART_RX_PORT, BOARD_DEBUG_UART_RX_PIN, kPORT_InterruptFallingEdge);
+    PORT_SetPinInterruptConfig(BOARD_DEBUG_UART_RX_PORT, BOARD_DEBUG_UART_RX_PIN, kPORT_InterruptFallingEdge);
     const port_pin_config_t DEBUG_UART_TX = {/* Internal pull-up/down resistor is disabled */
                                              kPORT_PullDisable,
                                              /* Fast slew rate is configured */
@@ -421,7 +421,7 @@ void BOARD_InitDEBUG_UARTPins(void)
                                              kPORT_UnlockRegister};
     /* PORTB17 (pin 63) is configured as UART0_TX */
     PORT_SetPinConfig(BOARD_DEBUG_UART_TX_PORT, BOARD_DEBUG_UART_TX_PIN, &DEBUG_UART_TX);
-   // PORT_SetPinInterruptConfig(BOARD_DEBUG_UART_TX_PORT, BOARD_DEBUG_UART_TX_PIN, kPORT_InterruptFallingEdge);
+    PORT_SetPinInterruptConfig(BOARD_DEBUG_UART_TX_PORT, BOARD_DEBUG_UART_TX_PIN, kPORT_InterruptFallingEdge);
 
     SIM->SOPT5 = ((SIM->SOPT5 &
                    /* Mask bits to zero which are setting */
