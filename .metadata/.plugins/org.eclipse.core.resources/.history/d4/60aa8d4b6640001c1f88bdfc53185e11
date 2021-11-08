@@ -1,0 +1,22 @@
+#include "uart.h"
+#include "stdint.h"
+
+
+uint8_t read(void){
+	uint8_t readch;
+	UART_ReadBlocking(UART0, &readch, 1);
+	return readch;
+}
+
+
+void print(uint8_t trnsdata){
+	UART_WriteBlocking(UART0, &trnsdata, 1);
+}
+
+void UART0_RX_TX_IRQHandler(){
+	uint8_t readch;
+	readch = read();
+	print(readch);
+	PORT_ClearPinsInterruptFlags(GPIOB, (1<<16));
+	PORT_ClearPinsInterruptFlags(GPIOB, (1<<17));
+}

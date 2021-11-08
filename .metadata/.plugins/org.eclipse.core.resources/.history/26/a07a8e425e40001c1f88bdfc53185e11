@@ -1,0 +1,2 @@
+#define UART0_CLOCK_PURE kCLOCK_CoreSysClk
+#define UART0_CLOCK CLOCK_GetFreq(kCLOCK_CoreSysClk)

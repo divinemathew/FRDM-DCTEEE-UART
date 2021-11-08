@@ -1,0 +1,14 @@
+#include "uart.h"
+
+
+uint8_t read(void){
+	uint8_t readch;
+	UART_ReadBlocking(UART0, &readch, 1);
+	return readch;
+}
+
+void print(uint8_t){
+	uint8_t readch;
+	UART_ReadBlocking(UART0, &readch, 1);
+	return readch;
+}

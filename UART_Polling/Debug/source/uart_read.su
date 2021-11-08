@@ -1,0 +1,2 @@
+../source/uart_read.c:5:9:read	16	static
+../source/uart_read.c:12:6:print	16	static

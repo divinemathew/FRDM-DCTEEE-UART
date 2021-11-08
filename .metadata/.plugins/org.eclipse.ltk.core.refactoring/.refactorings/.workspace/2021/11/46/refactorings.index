@@ -1,0 +1,6 @@
+1636344667348	Delete resource 'UART_polling_Polling/source/semihost_hardfault.c'
+1636355178886	Delete resource 'frdmk64f_uart_polling'
+1636355190591	Rename resource 'UART_polling_Polling'
+1636355507132	Rename resource 'MK64F12_Project'
+1636355546143	Delete resource 'UART_Interrupt/source/semihost_hardfault.c'
+1636360399315	Delete resource 'frdmk64f_uart_interrupt'

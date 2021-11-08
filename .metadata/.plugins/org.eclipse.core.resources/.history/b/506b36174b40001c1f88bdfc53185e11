@@ -1,0 +1,1 @@
+#define UART0_CLOCK_PURE SYS_CLK

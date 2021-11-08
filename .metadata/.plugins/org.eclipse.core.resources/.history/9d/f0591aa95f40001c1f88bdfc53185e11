@@ -1,0 +1,5 @@
+#define UART0_CLOCK CLOCK_GetFreq(kCLOCK_CoreSysClk)
+#define UART0_ADD UART0_BASE
+
+void Init_UART0(void);
+uint8_t read(void);

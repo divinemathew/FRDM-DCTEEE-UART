@@ -1,0 +1,6 @@
+12:27:45 **** Incremental Build of configuration Debug for project frdmk64f_uart_polling ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+
+12:27:46 Build Finished. 0 errors, 0 warnings. (took 889ms)
+
