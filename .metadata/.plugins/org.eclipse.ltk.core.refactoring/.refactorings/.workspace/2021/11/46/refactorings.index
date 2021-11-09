@@ -4,3 +4,4 @@
 1636355507132	Rename resource 'MK64F12_Project'
 1636355546143	Delete resource 'UART_Interrupt/source/semihost_hardfault.c'
 1636360399315	Delete resource 'frdmk64f_uart_interrupt'
+1636442820619	Delete resource 'frdmk64f_uart_interrupt_transfer/source/semihost_hardfault.c'

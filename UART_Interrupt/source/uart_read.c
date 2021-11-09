@@ -16,9 +16,9 @@ void print(uint8_t trnsdata){
 }
 
 void UART0_RX_TX_IRQHandler(){
+	uint32_t flag_status;
 	uint8_t readch;
+	flag_status = UART_GetStatusFlags(UART0);
 	readch = read();
 	print(readch);
-	//PORT_ClearPinsInterruptFlags(GPIOB, (1<<16));
-	//PORT_ClearPinsInterruptFlags(GPIOB, (1<<17));
 }

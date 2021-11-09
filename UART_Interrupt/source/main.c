@@ -18,8 +18,6 @@ int main(void) {
     Init_UART0();
     BOARD_InitLEDsPins();
 
-
-
     while(1){
     	/*LED TURN ON*/
     	LED_BLUE_ON();
